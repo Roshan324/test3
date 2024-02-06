@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="trash-bin">
+        <div class="item" data-type="Plastic">
+            <img src="./imgs/plastic4.png" alt="">
+            <div>
+                <input class="rang-input" type="range" min="0" max="100" oninput="updateValue(this, 'Plastic')">
+                <span class="range-value"></span>
+            </div>
+
+        </div>
+        <div class="item" data-type="Metal">
+            <img src="./imgs/metal7.png" alt="">
+            <div>
+                <input class="rang-input" type="range" min="0" max="100" oninput="updateValue(this, 'Metal')">
+                <span class="range-value"></span>
+            </div>
+
+        </div>
+        <div class="item" data-type="Paper">
+            <img src="./imgs/paper6.png" alt="">
+            <div>
+                <input class="rang-input" type="range" min="0" max="100" oninput="updateValue(this, 'Paper')">
+                <span class="range-value"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="chart_area"></div>
+
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #162c4e;
+    color: rgb(255, 255, 255);
+}
+
+.trash-bin {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem auto 4rem;
+}
+
+.trash-bin .item {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.trash-bin .item img {
+    width: 50%;
+}
+
+#chart_area {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    -webkit-box-shadow: -1px 0px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 0px 9px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 0px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+input[type="range"] {
+    appearance: slider-vertical;
+    width: 2%;
+    height: 170px;
+}
+
+/* media query */
+@media (width < 1304px) {
+    .item {
+        width: 25% !important;
+    }
+}
+
+@media (width < 1069px) {
+    .item {
+        width: 30% !important;
+        justify-content: center !important;
+    }
+
+    .trash-bin {
+        justify-content: space-around;
+    }
+
+    input[type="range"] {
+        height: 190px;
+    }
+}
+
+@media (width < 938px) {
+    .item {
+        width: 31% !important;
+    }
+
+    input[type="range"] {
+        height: 150px;
+    }
+}
+
+@media (width < 799px) {
+    #chart_area {
+        width: 90%;
+    }
+}
+
+@media (width < 791px) {
+    .item {
+        width: 38% !important;
+    }
+
+    .trash-bin {
+        justify-content: flex-start;
+        padding-left: 1.5rem;
+    }
+}
+
+@media (width < 710px) {
+    .item {
+        width: 45% !important;
+    }
+}
+
+@media (width < 586px) {
+    #chart_area {
+        width: 98%;
+    }
+
+    .item {
+        width: 55% !important;
+    }
+
+    .item img {
+        width: 75% !important;
+    }
+
+    input[type="range"] {
+        height: 180px;
+    }
+}
+
+@media (width < 502px) {
+    input[type="range"] {
+        height: 150px;
+    }
+}
+
+@media (width < 486px) {
+    .item {
+        width: 85% !important;
+    }
+
+    input[type="range"] {
+        height: 240px;
+    }
+}
+
+@media (width < 387px) {
+    input[type="range"] {
+        height: 150px;
+    }
+}
