@@ -107,7 +107,7 @@ var layout = {
     },
      xaxis: {
         tickfont: {
-            color: 'rgb(255, 255, 255)' // Change the color here
+            color: '#fff' // Change the color here
         }
     },
     hovermode: 'y',
