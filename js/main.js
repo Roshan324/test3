@@ -100,7 +100,15 @@ var layout = {
     showlegend: false,
     yaxis: {
         range: [0, 100],
-        tickvals: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        tickvals: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+            tickfont: {
+            color: '#fff' // Change the color here
+        }
+    },
+     xaxis: {
+        tickfont: {
+            color: 'rgb(255, 255, 255)' // Change the color here
+        }
     },
     hovermode: 'y',
     bargap: 0.05, 
